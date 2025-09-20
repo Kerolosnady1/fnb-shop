@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://kit.fontawesome.com/a2e6b5f6c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header same as index (kept for static demo) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Fresh<span>Sip</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="cart-btn" aria-label="Open cart"><i class="fas fa-shopping-cart"></i><span
+                    class="cart-count">0</span></button>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="products-list">
+            <h1>All Products</h1>
+            <div class="product-grid">
+                <!-- Repeat product cards; in a real site you'd generate these dynamically -->
+                <article class="product-card">
+                    <img src="/assets/images/latte.jpg" alt="Caffe Latte">
+                    <h3>Caffe Latte</h3>
+                    <p class="price">$3.50</p>
+                    <button class="btn small">Add to Cart</button>
+                </article>
+
+
+                <article class="product-card">
+                    <img src="/assets/images/espresso.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p class="price">$2.00</p>
+                    <button class="btn small">Add to Cart</button>
+                </article>
+
+
+                <article class="product-card">
+                    <img src="/assets/images/green-tea.jpg" alt="Green Tea">
+                    <h3>Organic Green Tea</h3>
+                    <p class="price">$2.50</p>
+                    <button class="btn small">Add to Cart</button>
+                </article>
+
+
+                <article class="product-card">
+                    <img src="/assets/images/sandwich.jpg" alt="Club Sandwich">
+                    <h3>Club Sandwich</h3>
+                    <p class="price">$6.00</p>
+                    <button class="btn small">Add to Cart</button>
+                </article>
+
+
+                <!-- add more as needed -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h4>FreshSip</h4>
+                <p>123 Foodway, Cairo, Egypt<br>Tel: +20 2 1234 5678</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>&copy; <span id="year"></span> FreshSip. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelector('.nav-toggle').addEventListener('click', () => { document.querySelector('.main-nav').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>

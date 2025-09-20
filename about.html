@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreshSip — About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/a2e6b5f6c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Fresh<span>Sip</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="cart-btn" aria-label="Open cart"><i class="fas fa-shopping-cart"></i><span
+                    class="cart-count">0</span></button>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+
+    <main class="container about-page">
+        <section>
+            <h1>About FreshSip</h1>
+            <p>FreshSip is a locally owned food & beverage shop focused on bringing fresh, high-quality drinks and
+                snacks to our community.
+                Our mission is to use responsibly sourced ingredients and provide a friendly, sustainable experience.
+            </p>
+        </section>
+
+
+        <section class="values">
+            <div>
+                <h3>Quality</h3>
+                <p>We select only premium ingredients.</p>
+            </div>
+            <div>
+                <h3>Sustainability</h3>
+                <p>Eco‑friendly packaging and local sourcing.</p>
+            </div>
+            <div>
+                <h3>Community</h3>
+                <p>Supporting local producers and charities.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h4>FreshSip</h4>
+                <p>123 Foodway, Cairo, Egypt<br>Tel: +20 2 1234 5678</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>&copy; <span id="year"></span> FreshSip. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelector('.nav-toggle').addEventListener('click', () => { document.querySelector('.main-nav').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>
